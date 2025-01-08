@@ -3,11 +3,26 @@
 
 
 const App = () => {
+
+  let status = true;
+
   return (
     <div>
-      <h1>hello 1</h1>
-      <h1>hello 1</h1>
-     </div>
+      
+     <h1>Login status </h1>
+    
+      {(()=>{
+
+        if(status== true){
+          return <button>Logged in</button>
+        }else{
+          return <button>Logged out</button>
+        }
+
+      })()}
+
+
+    </div>
   );
 };
 
